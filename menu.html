@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мои соцсети</title>
+</head>
+<body>
+    
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main{
+            height: 100vh;
+        }
+
+        .box{
+            width: 450px;
+            height: 350px;
+            background: #000;
+            border-radius: 20px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.363);
+        }
+
+        li{
+            width: 300px;
+            padding: 15px;
+            color: #fff;
+            background: #151515;
+            list-style: none;
+            margin: 12px;
+            cursor: pointer;
+            transition: all .4s;
+            position: relative;
+        }
+
+        li:hover{
+            transform: translate(30px);
+
+        }
+        
+        li::before, li::after{
+            content: "";
+            position: absolute;
+            background: #151515;
+            transition: all .4s;
+        }
+        li::before{
+            width: 20px;
+            height: 100%;
+            top: 0;
+            left: -30px;
+        }
+        li::after{
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0%;
+        }
+
+        li:hover::before, li:hover::after{
+            background:aqua;
+            box-shadow: 0 0 10px aqua;
+        }
+        
+
+
+
+    </style>
+    <div class="main center">
+        <div class="box center">
+            <ul>
+                <li><a href="https://vk.com/vlchrv" target="_blank">Vkontakte</a></li>
+                <li><a href="https://www.instagram.com/vlad79970/" target="_blank">Instagramm</a></li>
+                <li><a href="https://t.me/kuvalda04" target="_blank">Telegramm</a></li>
+                <li><a href="https://github.com/kuvalda04" target="_blank">Github</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
